@@ -4,48 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-    <div>
-        <h1>Eco Trakers</h1>
-    </div>
-    <div>
-        <h3> Iniciar Sesión</h3>
-        <form action="" method="post">
-        <div>
-                <label for="email"> correo electrónico</label>
-                <input type="email" name="email" id="email" placeholder="ejemplo@correo.com">
-        </div> 
-        <div>
-                <div>
-                    <label for="password">contraseña</label>
-                    <input type="password" id="password" placeholder="****">
-                </div>  
-                <div>
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </div>
+<body class="d-flex align-items-center py-4 mt-3 position-absolute top-50 start-50 translate-middle w-100">
+    <main class="p-auto m-auto">
+        <div class="text-start pt-4 ps-3">
+            <h1 class="fw-semibold fs-1">Eco Trakers</h1>
+        </div>
+        <div class="border-opacity-50 shadow-lg rounded p-3">
+            <h3 class="fw-semibold py-2 mb-2">Iniciar Sesión</h3>
+            <form action="" method="post">
+            <div class="fw-medium pb-3">
+                    <label for="email" class="d-block pb-3">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" class="d-block mw-100 rounded-3 border border-opacity-75" style="width: 200%">
+            </div> 
+            <div class="fw-medium pb-3">
+                    <div class="d-block pb-3">
+                        <label for="password" class="d-inline">Contraseña</label>
+                        <a href="#" class="d-inline text-end fs-6 fw-light text-decoration-none ps-5">¿Olvidaste tu contraseña?</a> 
+                    </div>  
+                    <div class="d-block ">
+                        <input type="password" id="password" placeholder="****" class="mw-100 rounded-3 border border-opacity-75" style="width: 200%">
+                    </div>
+            </div>
+            <div class="py-3 fs-6 fw-lighter">
+                <input type="checkbox" name="rememberMe" id="rememberMe" class=" rounded-3 border border-opacity-100">
+                <label for="rememberMe">Recordarme</label>
+            </div>
+            <div>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            </div>
+            
+            </form>
+            <hr>
+            <div>
+                <button type="button" class="btn btn-danger btn-block" onclick="onSignIn(event)">
+                    <div class="g-signin2" data-onsuccess="onSignIn"> Inicia sesión con Google </div>
+                </button>
+            </div>    
         </div>
         <div>
-            <input type="checkbox" name="rememberMe" id="rememberMe">
-            <label for="rememberMe">Recordarme</label>
+            <h3>¿No tienes una cuenta?</h3>        
+            <a href="#">Registrate</a>
         </div>
-        <div>
-                <button type="submit">Iniciar sesión</button>
-        </div>
-        
-        </form>
-        <hr>
-        <div>
-            <button type="button" class="btn btn-danger btn-block" onclick="onSignIn(event)">
-                <div class="g-signin2" data-onsuccess="onSignIn"> Inicia sesión con Google </div>
-            </button>
-        </div>    
-    </div>
-    <div>
-        <h4>¿No tienes una cuenta?</h4>        
-        <a href="#">Registrate</a>
-    </div>
+    
+    </main>
+    
     <script src="login.js"></script>
 </body>
 </html>
