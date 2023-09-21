@@ -4,51 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    
 </head>
-<body class="d-flex align-items-center py-4 mt-3 position-absolute top-50 start-50 translate-middle w-100">
-    <main class="p-auto m-auto">
-        <div class="text-start pt-4 ps-3">
-            <h1 class="fw-semibold fs-1">Eco Trakers</h1>
-        </div>
+<body class="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-100 bg-secondary-subtle">
+    <main class="p-auto m-auto bg-light rounded border-0">
+        
         <div class="border-opacity-50 shadow-lg rounded p-3">
-            <h3 class="fw-semibold py-2 mb-2">Iniciar Sesión</h3>
+
+            <a href="/index.html" class="text-decoration-none d-flex justify-content-end mb-3">
+                <button type="button" class="btn-close p-2"  aria-label="Close"></button>
+            </a>
+
+            <h3 class="fw-semibold py-2 mb-2">Iniciar Sesión en Eco Trackers</h3>
+
             <form action="" method="post">
-            <div class="fw-medium pb-3">
-                    <label for="email" class="d-block pb-3">Correo electrónico</label>
-                    <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" class="d-block mw-100 rounded-3 border border-opacity-75" style="width: 200%">
-            </div> 
-            <div class="fw-medium pb-3">
-                    <div class="d-block pb-3">
-                        <label for="password" class="d-inline">Contraseña</label>
-                        <a href="#" class="d-inline text-end fs-6 fw-light text-decoration-none ps-5">¿Olvidaste tu contraseña?</a> 
-                    </div>  
-                    <div class="d-block ">
-                        <input type="password" id="password" placeholder="****" class="mw-100 rounded-3 border border-opacity-75" style="width: 200%">
-                    </div>
-            </div>
-            <div class="py-3 fs-6 fw-lighter form-check form-switch">
-                <input type="checkbox" role="switch" name="rememberMe" id="rememberMe" class=" form-check-input border-success-subtle bg-success">
-                <label for="rememberMe">Recordarme</label>
-            </div>
-            <div class="pt-3">
-                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-            </div>
-            
+                <div class="fw-medium pb-3">
+                        <label for="email" class="d-block pb-3">Correo electrónico</label>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" class="d-block mw-100 rounded-3 border border-opacity-75" style="width: 200%">
+                </div> 
+                <div class="fw-medium pb-3">
+                        <div class="d-flex justify-content-between pb-3">
+                            <label for="password" class="">Contraseña</label>
+                            <a href="#" class=" text-end fw-light text-decoration-none d-flex justify-content-end">¿Olvidaste tu contraseña?</a> 
+                        </div>  
+                        <div class="d-block ">
+                            <input type="password" id="password" placeholder="****" class="mw-100 rounded-3 border border-opacity-75" style="width: 200%">
+                        </div>
+                </div>
+                <div class="py-3 fs-6 fw-lighter form-check form-switch">
+                    <input type="checkbox" role="switch" name="rememberMe" id="rememberMe" class=" form-check-input border-success-subtle bg-success">
+                    <label for="rememberMe">Recordarme</label>
+                </div>
+                <div class="py-3">
+                        <button type="submit" class="btn btn-success mw-100 rounded-pill border border-opacity-75" style="width: 200%">Iniciar sesión</button>
+                </div>
+                
             </form>
+            
             <hr>
-            <div>
-                <button type="button" class="btn btn-danger btn-block" onclick="onSignIn(event)">
+                
+            <div class="mt-4 pt-3">
+                <button type="button" class="btn btn-outline-dark mw-100 rounded-pill border border-opacity-75" style="width: 200%" onclick="onSignIn(event)">
                     <div class="g-signin2" data-onsuccess="onSignIn"> Inicia sesión con Google </div>
                 </button>
             </div>    
+            <div>
+                <h3>¿No tienes una cuenta?</h3>        
+                <a href="#">Registrate</a>
+            </div>
+        
         </div>
-        <div>
-            <h3>¿No tienes una cuenta?</h3>        
-            <a href="#">Registrate</a>
-        </div>
-    
     </main>
     
     <script src="login.js"></script>
