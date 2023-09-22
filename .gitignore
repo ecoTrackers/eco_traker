@@ -1,0 +1,7 @@
+# Ignora archivos de compilación
+*.o
+*.out
+
+# Ignora carpetas y archivos específicos
+node_modules/
+build/
