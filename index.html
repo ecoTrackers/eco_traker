@@ -11,13 +11,28 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Eco Trackers</h1>
-        <nav>
-            <a href="logup/logup.html">Registrarse</a>
-            <a href="login/login.html">Iniciar sesión</a>
+    <header class="navbar navbar-expand-sm d-flex justify-content-between align-items-center">
+        <h1 class="text-sm-start m-4 text-white">Eco Trackers</h1>
+        <button id="toggleButton" class="navbar-toggler custom-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item d-none d-sm-block btn" >
+                    <a class="nav-link link-light mt-2 fw-semibold" href="logup/logup.html">Registrarse</a>
+                </li>
+                <li class="nav-item d-none d-sm-block btn">
+                    <a class="nav-link link-light mt-2 fw-semibold" href="login/login.html">Iniciar sesión</a>
+                </li>
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link link-light ms-4 mb-3" href="logup/logup.html">Registrarse</a>
+                </li>
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link link-light ms-4 mb-3" href="login/login.html">Iniciar sesión</a>
+                </li>
+            </ul>
         </nav>
-    </header>
+    </header>    
     
     <section>
         <article>
@@ -62,7 +77,8 @@
         [LinkedIn](enlace a tu perfil de LinkedIn)
     </footer>
     
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
