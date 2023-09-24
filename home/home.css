@@ -3,7 +3,8 @@
     right: 0 !important;
 }
 
-
+#promociones.container,
+#promociones.container-sm,
 #vendidos.container,
 #vendidos.container-sm {
     max-width: none; 
