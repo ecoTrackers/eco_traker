@@ -2,3 +2,9 @@
     left: auto !important;
     right: 0 !important;
 }
+
+
+#vendidos.container,
+#vendidos.container-sm {
+    max-width: none; 
+}
