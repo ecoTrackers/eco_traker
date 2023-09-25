@@ -12,26 +12,81 @@
     <link rel="stylesheet" href="/admin/css/styles.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-sm d-flex justify-content-between align-items-center mb-5">
+    <header class="navbar navbar-expand-sm d-flex justify-content-between align-items-center">
         <h1 class="text-sm-start m-4 text-white fw-bold fs-1">Eco Trackers</h1>
-        <form class="form-inline my-2 my-lg-0 flex-grow-1 mx-3">
+        
+        <form class="form-inline mt-2 my-lg-0 flex-grow-1 mx-3">
             <div class="input-group w-100">
                 <input class="form-control rounded-start-pill" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-light rounded-end-pill" type="submit">
+                <button class="btn btn-outline-light rounded-end-pill me-3" type="submit">
                     <i class="fas fa-search"></i> 
                 </button>
             </div>
         </form>
-
-        <button id="toggleButton" class="navbar-toggler custom-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    
+        <div class="collapse navbar-collapse justify-content-end d-none d-sm-block" id="navbarNav">
             <i class="fas fa-user fa-lg me-3 text-white"></i>
         </div>
-    </header>    
+    </header>
+
+    <nav class="d-md-none bg-success header_home">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-row">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-home"></i> <!-- Icono para Inicio -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-shopping-cart"></i> <!-- Icono para Productos -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-envelope"></i> <!-- Icono para Contacto -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid h-100">
+        
+        <div class="row h-100">
+            <nav class="col-md-2 d-none d-md-block bg-success">
+                <div class="sidebar-sticky mt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-auto ml-sm-auto col-lg-auto px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Contenido Principal</h1>
+                </div>
+                <p>
+                    Aquí va tu contenido principal.
+                </p>
+            </main>
+        </div>
+
+    </div>
          
     <footer class="bg-dark text-white p-4">
         <div class="container">
