@@ -1,0 +1,18 @@
+.dropdown-menu-start {
+    left: auto !important;
+    right: 0 !important;
+}
+
+
+#lo_ultimo.container,
+#lo_ultimo.container-sm,
+#compras.container,
+#compras.container-sm,
+#nuevos.container,
+#nuevos.container-sm,
+#promociones.container,
+#promociones.container-sm,
+#vendidos.container,
+#vendidos.container-sm {
+    max-width: none; 
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/home/home.css">
+</head>
+<body>
+    <div class="header_home ">
+        <header class="navbar navbar-expand-sm d-flex justify-content-between align-items-center">
+            <h1 class="text-sm-start m-4 text-white fw-bold fs-1">Eco Trackers</h1>
+            
+            <form class="form-inline my-2 my-lg-0 flex-grow-1 mx-3">
+                <div class="input-group w-100">
+                    <input class="form-control rounded-start-pill" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-light rounded-end-pill" type="submit">
+                        <i class="fas fa-search"></i> 
+                    </button>
+                </div>
+            </form>
+    
+            <button id="toggleButton" class="navbar-toggler custom-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link text-white " href="#"> <i class="fas fa-shopping-cart fa-lg me-2" ></i></a>
+                    </li>
+                    <li class="nav-item dropdown d-none d-sm-block">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-lg me-2"></i></a>
+                        <div class="dropdown-menu dropdown-menu-start border-success-subtle border-3" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-header text-decoration-none fs-4 fw-semibold" href="#">Perfil</a>
+                            <a class="dropdown-item fw-light fs-6" href="#">Historial de compras</a>
+                            <a class="dropdown-item fw-light fs-6" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item fw-light fs-6" href="/index.html">Cerrar sesión</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-block d-sm-none">
+                        <a class="nav-link link-light ms-4 fs-6" href="#">Tu carrito</a>
+                    </li>
+                    <hr class="d-block d-sm-none">
+                    <li class="nav-item d-block d-sm-none">
+                        <a class="nav-link link-light ms-4 fs-6" href="#">Historial de compras</a>
+                    </li>
+                    <li class="nav-item d-block d-sm-none">
+                        <a class="nav-link link-light ms-4 fs-6" href="#">Configuración</a>
+                    </li>
+                    <hr class="d-block d-sm-none">
+                    <li class="nav-item d-block d-sm-none">
+                        <a class="nav-link link-light ms-4 fs-6" href="/index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>  
+        <section class="container text-center pb-3">
+            <div class="row flex-nowrap overflow-auto">
+                <div class="col">
+                    <a href="#promociones" class=" text-white text-decoration-none" style="white-space: nowrap;">Promociones</a>
+                </div>
+                <div class="col">
+                    <a href="#lo_ultimo" class=" text-white text-decoration-none" style="white-space: nowrap;">Lo ultimo que viste</a>
+                </div>
+                <div class="col">
+                    <a href="#compras" class=" text-white text-decoration-none" style="white-space: nowrap;">Según tus comprar</a>
+                </div>
+                <div class="col">
+                    <a href="#nuevos" class="text-white text-decoration-none" style="white-space: nowrap;">Nuevos productos</a>
+                </div>
+                <div class="col">
+                    <a href="#vendidos" class="text-white text-decoration-none" style="white-space: nowrap;">Más vendidos</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section id="promociones" class="container bg-secondary bg-opacity-50 w-100 m-0 py-3">
+        <div class="text-center">
+            <h2 class="text-white">Promoción Especial</h2>
+            <p class="text-white">Descubre nuestras increíbles promociones y ahorra en tus compras. ¡No te lo pierdas! <br> 
+            Aprovecha esta oferta especial y ahorra en tu compra.</p>
+        </div>
+    
+        <div id="carouselpromociones" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-indicators pt-5 align-items-end m-0">
+                <button type="button" data-bs-target="#carouselpromociones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselpromociones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselpromociones" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselpromociones" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+
+            <div class="carousel-inner">
+                <!-- 1 -->
+                <div class="carousel-item active px-5 mb-4">
+                    <div class="row">                    
+                        <div class="col-12">
+                            <div class="card ">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">product1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="carousel-item px-5 mb-4">
+                    <div class="row">                    
+                        <div class="col-12">
+                            <div class="card ">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">product1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- 3 -->
+                 <div class="carousel-item px-5 mb-4">
+                    <div class="row">                    
+                        <div class="col-12">
+                            <div class="card ">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">product1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- 4 -->
+                 <div class="carousel-item px-5 mb-4">
+                    <div class="row">                    
+                        <div class="col-12">
+                            <div class="card ">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">product1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev justify-content-start m-0" href="#carouselpromociones" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next justify-content-end m-0" href="#carouselpromociones" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
+    </section>  
+
+    <section id="lo_ultimo" class="container my-4">
+        <div class="text-center pb-3">
+            <h2 class="">Lo ultimo que viste</h2>
+        </div>
+    
+        <div class="row d-flex justify-content-between px-3">
+            <!--  1 -->
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            <!--  2 -->
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            <!--  3 -->
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            <!--  4 -->
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            <!--  6 -->
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="compras" class="container my-4 bg-secondary bg-opacity-50">
+        <div class="text-center">
+            <h2 class="pt-3">Según tus compras </h2>
+            <p>"¡Eres único(a)! Basándonos en tus compras anteriores, te presentamos una selección especial de productos que creemos que te encantarán. 
+            </p>
+        </div>
+        <div class=" row justify-content-between">
+           
+            <div class="col-12 col-md-6 col-lg-4 pb-3 ">
+                <div class="card h-100">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$19.99</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col px-3">
+                <div class="row d-flex justify-content-evenly ">
+                    <!--  1 -->
+                    <div class="col-lg-6 col-md-6 mb-6 pb-3">
+                        <div class="card">
+                            <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">$19.99</p>
+                                <a href="#" class="btn btn-primary">Añadir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  2 -->
+                    <div class="col-lg-6 col-md-6 mb-6 pb-3">
+                        <div class="card">
+                            <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">$19.99</p>
+                                <a href="#" class="btn btn-primary">Añadir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  3 -->
+                    <div class="col-lg-6 col-md-6 mb-6 pb-3">
+                        <div class="card">
+                            <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">$19.99</p>
+                                <a href="#" class="btn btn-primary">Añadir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  4 -->
+                    <div class="col-lg-6 col-md-6 mb-6 pb-3">
+                        <div class="card">
+                            <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">$19.99</p>
+                                <a href="#" class="btn btn-primary">Añadir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="nuevos" class="container my-4">
+        <div class="text-center pb-3">
+            <h2>Nuevos Productos</h2>
+            <p>¡Descubre lo último en EcoTracker! Hemos agregado emocionantes nuevos productos que te llevarán a un viaje sostenible y único.</p>
+            <p>¡No te pierdas nuestras últimas incorporaciones, tu próximo favorito te está esperando!</p>
+        </div>
+    
+        <div class="row justify-content-between">
+            <div class="col-md-3 mb-4">
+                <nav id="sidebar" class="">
+                    <div class="list-group">
+                        <a href="#nuevosCarousel" class="list-group-item list-group-item-action category-button" data-slide-to="0">Hogar Sostenible</a>
+                        <a href="#nuevosCarousel" class="list-group-item list-group-item-action category-button" data-slide-to="1">Moda Ética</a>
+                        <a href="#nuevosCarousel" class="list-group-item list-group-item-action category-button" data-slide-to="2">Bienestar Natural</a>
+                        <a href="#nuevosCarousel" class="list-group-item list-group-item-action category-button" data-slide-to="3">Tecnología Sostenible</a>
+                        <a href="#nuevosCarousel" class="list-group-item list-group-item-action category-button" data-slide-to="4">Alimentos y Bebidas Ecológicas</a>
+                    </div>
+                </nav>
+            </div>
+    
+            <div class="col-md-9 mb-4">
+
+                <div id="nuevosCarousel" class="carousel slide h-100 m-0" data-ride="carousel">
+                    <div class="carousel-inner h-100">
+
+                        <div class="carousel-item active h-100">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="col-9">
+                                    <div class="card h-100">
+                                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Producto Hogar Sostenible</h5>
+                                            <p class="card-text">$19.99</p>
+                                            <a href="#" class="btn btn-primary">Añadir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item h-100">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="col-9">
+                                    <div class="card h-100">
+                                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Producto Moda Ética</h5>
+                                            <p class="card-text">$19.99</p>
+                                            <a href="#" class="btn btn-primary">Añadir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="col-9">
+                                    <div class="card h-100">
+                                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bienestar Natural</h5>
+                                            <p class="card-text">$19.99</p>
+                                            <a href="#" class="btn btn-primary">Añadir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="col-9">
+                                    <div class="card h-100">
+                                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tecnología Sostenible</h5>
+                                            <p class="card-text">$19.99</p>
+                                            <a href="#" class="btn btn-primary">Añadir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <div class="row justify-content-center align-items-center h-100">
+                                <div class="col-9">
+                                    <div class="card h-100">
+                                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Alimentos y Bebidas Ecológicas</h5>
+                                            <p class="card-text">$19.99</p>
+                                            <a href="#" class="btn btn-primary">Añadir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="vendidos" class="container bg-warning bg-opacity-75 p-5 w-100">
+        <div class="text-center">
+            <h2>Más Vendidos</h2>
+            <p>Descubre nuestros productos más populares</p>
+        </div>
+    
+        <div id="carouselVendidos" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <!-- 1 -->
+                <div class="carousel-item active px-5">
+                    <div class="row">                    
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card ">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="carousel-item px-5">
+                    <div class="row">                    
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <a href="#" class="btn btn-primary">Añadir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev justify-content-start m-0" href="#carouselVendidos" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next justify-content-end m-0" href="#carouselVendidos" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>    
+    </section>
+     
+    <footer class="bg-dark text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3 class="mt-4">Contáctanos</h3>
+                    <div>
+                        <p class="fs-6">Dirección física: Av. EcoStreet, 123, Ciudad Verde, País.</p>
+                        <p class="fs-6">Correo Electrónico: info@ecotracker.com</p>
+                        <p class="fs-6">Teléfono: +123-456-7890 (Horario de atención: Lunes a Viernes, 9:00 AM - 5:00 PM)</p>  
+                    </div>
+                </div>
+                <hr class="d-md-none">
+                <div class="col-md-6">
+                    <form>
+                        <h4 class="mt-4">¿Cómo podemos ayudarte?</h4>
+                        <div class="mb-3">
+                            <input type="text" class="form-control fs-6 bg-dark-subtle rounded-pill border border-opacity-75" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control fs-6 bg-dark-subtle rounded-pill border border-opacity-75" placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control fs-6 bg-dark-subtle rounded-4 border border-opacity-75" rows="3" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success rounded-pill">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <hr>  
+            <div class="container d-flex justify-content-start align-items-center">
+                <h4 class="fs-6 mb-0 me-3">Síguenos:</h4>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-white"><i class="fab fa-facebook fa-lg me-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-lg me-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-lg me-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg me-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    
+    
+    
+    <script src="/js/script.js"></script>
+    <script src="/home/home.js>"> </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ee9da9871f.js" crossorigin="anonymous"></script>
+</body>
+</html>

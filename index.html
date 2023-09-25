@@ -7,62 +7,142 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Eco Trackers</h1>
-        <nav>
-            <a href="logup/logup.html">Registrarse</a>
-            <a href="login/login.html">Iniciar sesión</a>
+    <header class="navbar navbar-expand-sm d-flex justify-content-between align-items-center mb-5">
+        <h1 class="text-sm-start m-4 text-white fw-bold fs-1">Eco Trackers</h1>
+        <button id="toggleButton" class="navbar-toggler custom-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item d-none d-sm-block btn" >
+                    <a class="nav-link link-light mt-2 fw-semibold fs-6" href="logup/logup.html">Registrarse</a>
+                </li>
+                <li class="nav-item d-none d-sm-block btn">
+                    <a class="nav-link link-light mt-2 fw-semibold fs-6" href="login/login.html">Iniciar sesión</a>
+                </li>
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link link-light ms-4 fs-6" href="logup/logup.html">Registrarse</a>
+                </li>
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link link-light ms-4 fs-6" href="login/login.html">Iniciar sesión</a>
+                </li>
+            </ul>
         </nav>
-    </header>
-    
-    <section>
-        <article>
-            ¿Quiénes Somos?
-
-            EcoTracker es mucho más que un e-commerce. Somos una comunidad apasionada por la sostenibilidad y el cambio positivo en el mundo. Nos dedicamos a promover y ofrecer productos que respetan nuestro planeta y promueven un estilo de vida responsable.
-
-        </article>
-        <article>
-            Nuestra misión es proporcionar a nuestros clientes acceso a productos ecológicos y sostenibles de alta calidad. Creemos en un mundo en el que cada compra cuenta, y queremos hacer que cada compra cuente para un futuro más verde y saludable.
-
-        </article>
-        <article>
-            En EcoTracker, nos esforzamos por fomentar una comunidad comprometida con la sostenibilidad y el respeto por nuestro entorno. Creemos en la transparencia, la calidad y la innovación sostenible. 
-
-        </article>
-        <article>
-            Únete a nosotros en nuestro viaje hacia un futuro más consciente y ecológico.
-        </article>
+    </header>    
+        
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+                <article class="p-4 bg-light rounded h-100"> 
+                    <div class="row align-items-center">
+                        <h2 class="text-success">¿Quiénes Somos?</h2>
+                        <div class="col-md-4 text-center mb-3">
+                            <img src="img/1.png" alt="Imagen 1" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="lead fs-6">
+                                EcoTracker es mucho más que un e-commerce. Somos una comunidad apasionada por la sostenibilidad y el cambio positivo en el mundo. Nos dedicamos a promover y ofrecer productos que respetan nuestro planeta y promueven un estilo de vida responsable.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <article class="p-4 bg-light rounded h-100">
+                    <div class="row align-items-center">
+                        <h2 class="text-success">Nuestra misión</h2>
+                        <div class="col-md-4 text-center mb-3">
+                            <img src="img/2.png" alt="Imagen 1" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="lead fs-6">
+                                Nuestra misión es proporcionar a nuestros clientes acceso a productos ecológicos y sostenibles de alta calidad. Creemos en un mundo en el que cada compra cuenta, y queremos hacer que cada compra cuente para un futuro más verde y saludable.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <article class="p-4 bg-light rounded h-100">
+                    <div class="row align-items-center">
+                        <h2 class="text-success">Nuestros Valores</h2>
+                        <div class="col-md-4 text-center mb-3">
+                            <img src="img/3.png" alt="Imagen 1" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="lead fs-6">
+                                En EcoTracker, nos esforzamos por fomentar una comunidad comprometida con la sostenibilidad y el respeto por nuestro entorno. Creemos en la transparencia, la calidad y la innovación sostenible.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <article class="p-4 bg-light rounded h-100">
+                    <div class="row align-items-center">
+                        <h2 class="text-success">Únete a nosotros</h2>
+                        <div class="col-md-4 text-center mb-3">
+                            <img src="img/4.png" alt="Imagen 1" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="lead fs-6">
+                                Únete a nosotros en nuestro viaje hacia un futuro más consciente y ecológico.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
-    <footer>
-        
-        Contáctanos
-        
-        Dirección física: Av. EcoStreet, 123, Ciudad Verde, País.
-        
-        Correo Electrónico: info@ecotracker.com
-        
-        Teléfono: +123-456-7890 (Horario de atención: Lunes a Viernes, 9:00 AM - 5:00 PM)
-        
-        <hr>
-        Formulario de Contacto:
-        Nombre (campo para que el usuario escriba su nombre).
-        Correo Electrónico (campo para que el usuario escriba su correo electrónico).
-        Mensaje (área para que el usuario escriba su mensaje).
-        Botón "Enviar" para que el usuario envíe su mensaje.
-
-        Síguenos en nuestras redes sociales:
-        [Facebook](enlace a tu página de Facebook)
-        [Instagram](enlace a tu perfil de Instagram)
-        [Twitter](enlace a tu perfil de Twitter)
-        [LinkedIn](enlace a tu perfil de LinkedIn)
-    </footer>
     
-    <script src="js/bootstrap.min.js"></script>
+    <footer class="bg-dark text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3 class="mt-4">Contáctanos</h3>
+                    <div>
+                        <p class="fs-6">Dirección física: Av. EcoStreet, 123, Ciudad Verde, País.</p>
+                        <p class="fs-6">Correo Electrónico: info@ecotracker.com</p>
+                        <p class="fs-6">Teléfono: +123-456-7890 (Horario de atención: Lunes a Viernes, 9:00 AM - 5:00 PM)</p>  
+                    </div>
+                </div>
+                <hr class="d-md-none">
+                <div class="col-md-6">
+                    <form>
+                        <h4 class="mt-4">¿Cómo podemos ayudarte?</h4>
+                        <div class="mb-3">
+                            <input type="text" class="form-control fs-6 bg-dark-subtle rounded-pill border border-opacity-75" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control fs-6 bg-dark-subtle rounded-pill border border-opacity-75" placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control fs-6 bg-dark-subtle rounded-4 border border-opacity-75" rows="3" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success rounded-pill">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <hr>  
+            <div class="container d-flex justify-content-start align-items-center">
+                <h4 class="fs-6 mb-0 me-3">Síguenos:</h4>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-white"><i class="fab fa-facebook fa-lg me-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-lg me-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-lg me-2"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg me-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ee9da9871f.js" crossorigin="anonymous"></script>
 </body>
 </html>
