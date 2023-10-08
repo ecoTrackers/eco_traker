@@ -19,6 +19,7 @@ function validateLogin() {
     }
 
     redirectToHome();
+    
     return false; 
 }
 
