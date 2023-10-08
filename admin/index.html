@@ -68,24 +68,18 @@
                 <div class="sidebar-sticky mt-3">
                     <ul class="nav d-flex flex-column">
                         <li class="nav-item mb-3">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" onclick="loadContent('categorias')">
                                 Categorias
                             </a>
                         </li>
                         <li class="nav-item mb-3">
-                            <a class="nav-link text-white" href="#">
-                                Inventario
-                            </a>
+                            <a class="nav-link text-white" onclick="loadContent('inventario')">Inventario</a>
                         </li>
                         <li class="nav-item mb-3">
-                            <a class="nav-link text-white" href="#">
-                                Ordenes
-                            </a>
+                            <a class="nav-link text-white" onclick="loadContent('ordenes')">Ordenes</a>
                         </li>
                         <li class="nav-item mb-3">
-                            <a class="nav-link text-white" href="#">
-                                Historial de ventas
-                            </a>
+                            <a class="nav-link text-white" onclick="loadContent('historial')">Historial de ventas</a>
                         </li>
                         <li class="nav-item pb-3 px-auto" style="position: absolute; bottom: 0;">
                             <a class="nav-link text-white text-center" href="../home/home.html">
@@ -97,14 +91,15 @@
             </nav>
             
 
-            <main role="main" class="col-md-auto ml-sm-auto col-lg-auto px-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Contenido Principal</h1>
+            <main role="main" class="col-md-auto ml-sm-auto col-lg-auto offset-md-2 px-4 m-0">
+                <div class="d-flex flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2"> <span id="header-text"></span></h1>
                 </div>
-                <p>
-                    ....
-                </p>
+                <div id="main-content">
+
+                </div>
             </main>
+            
            
         </div>
 
@@ -124,9 +119,6 @@
         </div>
     </footer>    
     
-    
-    
-    <script src="/js/script.js"></script>
     <script src="/admin/js/script.js"> </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
