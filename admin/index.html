@@ -25,7 +25,7 @@
         </form>
     
         <div class="collapse navbar-collapse justify-content-end d-none d-sm-block" id="navbarNav">
-            <i class="fas fa-user fa-lg me-3 text-white"></i>
+            <i class="fa-solid fa-user-gear text-white pe-3"></i>
         </div>
     </header>
 
@@ -34,17 +34,27 @@
             <ul class="nav flex-row">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">
-                        <i class="fas fa-home"></i> 
+                        <i class="fa-solid fa-list"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">
-                        <i class="fas fa-shopping-cart"></i> 
+                        <i class="fa-brands fa-stack-overflow"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">
-                        <i class="fas fa-envelope"></i> 
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../home/home.html">
+                        <i class="fas fa-sign-out-alt"></i>
                     </a>
                 </li>
             </ul>
@@ -52,29 +62,40 @@
     </nav>
 
     <div class="container-fluid h-100">
-        
+
         <div class="row h-100">
-            <nav class="col-md-2 d-none d-md-block bg-success">
+            <nav class="col-md-2 d-none d-md-block bg-success h-100" style="height: 200px; position: relative;">
                 <div class="sidebar-sticky mt-3">
-                    <ul class="nav flex-column">
+                    <ul class="nav d-flex flex-column">
                         <li class="nav-item mb-3">
                             <a class="nav-link text-white" href="#">
-                                Inicio
+                                Categorias
                             </a>
                         </li>
                         <li class="nav-item mb-3">
                             <a class="nav-link text-white" href="#">
-                                Productos
+                                Inventario
                             </a>
                         </li>
                         <li class="nav-item mb-3">
                             <a class="nav-link text-white" href="#">
-                                Contacto
+                                Ordenes
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a class="nav-link text-white" href="#">
+                                Historial de ventas
+                            </a>
+                        </li>
+                        <li class="nav-item pb-3 px-auto" style="position: absolute; bottom: 0;">
+                            <a class="nav-link text-white text-center" href="../home/home.html">
+                                Salir
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
+            
 
             <main role="main" class="col-md-auto ml-sm-auto col-lg-auto px-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -84,6 +105,7 @@
                     ....
                 </p>
             </main>
+           
         </div>
 
     </div>
