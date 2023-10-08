@@ -35,3 +35,37 @@ loginForm.addEventListener('submit', (event) => {
         event.preventDefault();
     }
 });
+
+function validateForgot(){
+    
+    const email = document.getElementById('emailForgot').value;
+
+    if (email.trim() === '') {
+        alert('Todos los campos son obligatorios.');
+        return false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Ingrese un correo electrónico válido.');
+        return false;
+    }
+
+    redirectToIndex();
+    return false; 
+
+    function redirectToIndex() {
+        window.location.href = "../index.html"; 
+    }
+}
+
+const forgotForm = document.getElementById('forgotForm');
+loginForm.addEventListener('submit', (event) => {
+    if (validateForgot()) {
+        redirectToIndex(); 
+    } else {
+        event.preventDefault();
+    }
+});
+
+
