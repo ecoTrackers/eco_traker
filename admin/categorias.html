@@ -10,25 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/admin/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <div class="container m-1">
-
-        <ul class="list-group" id="categoryList">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="category-name">Nueva categoría</span>
-                <div class="flex-shrink-1 mb-2 mt-2">
-                    <button class="btn btn-outline-success btn-sm mx-1" onclick="editCategory(this)">Editar</button>
-                    <button class="btn btn-danger btn-sm" onclick="deleteCategory(this)">Eliminar</button>
-                </div>
-            </li>
-        </ul>
-    
-        <button class="btn btn-primary mt-1" onclick="addCategory('Nueva categoría')"><i class="fa-solid fa-plus"></i></button>
-    
+        <ul class="list-group" id="categoryList"></ul>
+        <button class="btn btn-primary mt-1" onclick="addCategory('Nueva categoría')">
+            <i class="fa-solid fa-plus"></i>
+        </button>
     </div>
+    
     
     <div class="modal fade" id="editCategoryModal" tabindex="-1" role="dialog" aria-labelledby="editCategoryModalLabel"
         aria-hidden="true">
@@ -48,7 +40,8 @@
     </div>
 
 
-    <script src="/admin/js/script.js"> </script>
+    <script src="./js/categorias.js"> </script>
+    <script src="./js/script.js"> </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
