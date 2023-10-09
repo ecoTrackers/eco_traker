@@ -47,6 +47,8 @@ function editCategory(button) {
     editedCategory = categoryNameElement;
 }
 
+
+//pendiente corregir guardada de actualizacion
 function saveEditedCategory() {
     const editedName = document.getElementById('editedCategoryName').value;
     if (editedName !== '') {
@@ -65,6 +67,7 @@ function saveEditedCategory() {
         localStorage.setItem('categories', JSON.stringify(updatedCategories));
     }
 }
+
 
 function addCategory(defaultName) {
     const categoryName = prompt('Ingrese el nombre de la categoría:', defaultName || '');

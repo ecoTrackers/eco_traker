@@ -17,6 +17,18 @@ async function loadContent(section) {
 
             document.body.appendChild(categoriasScript);
         }
+
+        if (section === 'inventario') {
+            const categoriasScript = document.createElement('script');
+            categoriasScript.src = './js/inventarios.js';
+
+            categoriasScript.onload = function() {
+                cargarCategoriasInventario()
+            };
+
+            document.body.appendChild(categoriasScript);
+        }
+
     } catch (error) {
         console.error('Error loading content:', error);
     }
