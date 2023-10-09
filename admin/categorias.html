@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container m-1">
+        <ul class="list-group" id="categoryList"></ul>
+        <button class="btn btn-primary mt-1" onclick="addCategory('Nueva categoría')">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+    
+    
+    <div class="modal fade" id="editCategoryModal" tabindex="-1" role="dialog" aria-labelledby="editCategoryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editCategoryModalLabel">Editar Categoría</h5>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="editedCategoryName">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="saveEditedCategory()">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/categorias.js"> </script>
+    <script src="./js/script.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ee9da9871f.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

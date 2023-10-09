@@ -19,7 +19,7 @@
 
             <h3 class="fw-semibold py-3 mb-2">Registrarse en EcoTracker</h3>
 
-            <form action="" method="post">
+            <form id="logupForm" onsubmit="return validateLogup()">
                 <div class="fw-medium pb-2">
                         <label for="name" class="d-block pb-2">Nombre</label>
                         <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" class="d-block mw-100 rounded-3 border border-opacity-75" style="width: 200%">
@@ -42,10 +42,10 @@
                 </div>
                 <div class="fw-medium pb-2">
                     <div class="pb-2">
-                        <label for="password" >Confirmar contraseña</label>
+                        <label for="confirmPassword" >Confirmar contraseña</label>
                     </div>  
                     <div class="d-block ">
-                        <input type="password" id="comfirPassword" placeholder="********" class="mw-100 rounded-3 border border-opacity-75" style="width: 200%">
+                        <input type="password" id="confirmPassword" placeholder="********" class="mw-100 rounded-3 border border-opacity-75" style="width: 200%">
                     </div>
                 </div>
                 <div class="fw-medium pb-2">
@@ -54,7 +54,7 @@
                 </div>
                 
                 <div class="py-2">
-                        <button type="submit" class="btn btn-outline-success mw-100 rounded-pill border border-opacity-75" style="width: 200%">Registrarse</button>
+                        <button type="button" class="btn btn-outline-success mw-100 rounded-pill border border-opacity-75" style="width: 200%" onclick="validateLogup()">Registrarse</button>
                 </div>
                 
             </form>
