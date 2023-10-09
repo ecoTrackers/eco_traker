@@ -11,7 +11,7 @@ function cargarCategoriasInventario(showAsTitles) {
             categoryContainer.className = showAsTitles ? 'category-container' : 'list-group-item d-flex flex-column mb-4';
 
             const categoryTitle = document.createElement(showAsTitles ? 'h1' : 'span');
-            categoryTitle.className = showAsTitles ? 'category-title fs-1 fw-bold' : 'category-name';
+            categoryTitle.className = showAsTitles ? 'category-title' : 'category-name fs-4 fw-semibold';
             categoryTitle.textContent = categoryName;
 
             const productList = document.createElement('ul');
@@ -66,10 +66,14 @@ function agregarProducto(categoryName) {
     productItem.className = 'list-group-item d-flex justify-content-between align-items-center';
 
     const productContent = document.createElement('div');
-    productContent.className = 'product-content';
+    productContent.className = 'product-content d-flex justify-content-between w-100';
 
     const quantityControls = document.createElement('div');
     quantityControls.className = 'quantity-controls';
+
+    const productNameElement = document.createElement('span');
+    productNameElement.className = 'product-name me-auto';
+    productNameElement.textContent = productName;
 
     const decrementButton = document.createElement('button');
     decrementButton.className = 'btn btn-outline-secondary btn-sm';
@@ -89,30 +93,30 @@ function agregarProducto(categoryName) {
         incrementProductQuantity(productQuantityElement);
     });
 
-    quantityControls.appendChild(decrementButton);
-    quantityControls.appendChild(productQuantityElement);
-    quantityControls.appendChild(incrementButton);
+    const buttonsContainer = document.createElement('div');
+    buttonsContainer.className = 'quantity-buttons pe-2';
+    buttonsContainer.appendChild(decrementButton);
+    buttonsContainer.appendChild(productQuantityElement);
+    buttonsContainer.appendChild(incrementButton);
 
-    const productNameElement = document.createElement('span');
-    productNameElement.className = 'product-name';
-    productNameElement.textContent = productName;
+    quantityControls.appendChild(buttonsContainer);
 
     const editButton = document.createElement('button');
-    editButton.className = 'btn btn-outline-info btn-sm mx-1';
+    editButton.className = 'btn btn-outline-success btn-sm mx-1';
     editButton.innerHTML = '<i class="fa-solid fa-pencil"></i>';
     editButton.addEventListener('click', () => {
         editarNombreProducto(productItem);
     });
 
     const deleteButton = document.createElement('button');
-    deleteButton.className = 'btn btn-outline-danger btn-sm';
+    deleteButton.className = 'btn btn-outline-danger btn-sm ';
     deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteButton.addEventListener('click', () => {
         eliminarProducto(productItem);
     });
 
-    productContent.appendChild(quantityControls);
     productContent.appendChild(productNameElement);
+    productContent.appendChild(quantityControls);
     productContent.appendChild(editButton);
     productContent.appendChild(deleteButton);
 
