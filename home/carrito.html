@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/home/home.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Carrito de Compras</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="w-25">Producto 1</td>
+                    <td>$19.99</td>
+                    <td>
+                        <input type="number" class="form-control" value="1" min="1" style="max-width: 80px;">
+                    </td>
+                    <td>$19.99</td>
+                    <td>
+                        <button class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut dolor corporis sunt corrupti numquam eveniet perspiciatis, animi distinctio quam nihil! Ex magnam eveniet quam nemo sed illum vel iure vero.</td>
+                    <td>$29.99</td>
+                    <td>
+                        <input type="number" class="form-control" value="1" min="1" style="max-width: 80px;">
+                    </td>
+                    <td>$29.99</td>
+                    <td>
+                        <button class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-right">
+            <h3>Total: $49.98</h3>
+            <div class="mt-3">
+                <button class="btn btn-primary mt-3">Realizar Pago</button>
+                <a href="/home/home.html" class="btn btn-outline-success mt-3">Continuar Comprando</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="/js/script.js"></script>
+    <script src="/home/home.js>"> </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ee9da9871f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
